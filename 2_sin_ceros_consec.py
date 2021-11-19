@@ -27,7 +27,7 @@ def recursion(n,k,cadena,stri):
 			cadena=cadena+"1"
 		else:
 			cadena=cadena+"0"
-		return recursion(n-1,k-1,cadena,"1"),recursion(n-1,k-1,cadena,"0")
+		return recursion(n-1,k-1,cadena,"0"),recursion(n-1,k-1,cadena,"1")
 		# else:
 			# cadena=cadena+"0"
 
