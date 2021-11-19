@@ -3,7 +3,9 @@ import math
 
 arr=int(input())
 
+a=0
 def recursion(i):
+	global a
 	if i==1:
 		print("base")
 		print(i)
@@ -13,12 +15,21 @@ def recursion(i):
 		if i%2==0:
 			print("par")
 			print(i)
+			# global a
+			a=a+combinatoria(i)
 			print(combinatoria(i))
-			return recursion(int(i/2))+recursion(int(i/2))
+			print(a)
+			return recursion(i/2)+recursion(i/2) # sospecho que aqui debo enviar
+			# la suma entre cobunatoria de i y irla sumando pero no se
+			# y en el caso base usar +0
 		else:
 			print("impar")
 			print(i)
-			return recursion(int(math.ceil(i/2)))+recursion(int(math.floor(i/2)))
+			# global a
+			a=a+combinatoria(i)
+			print(combinatoria(i))
+			print(a)
+			return recursion(math.ceil(i/2))+recursion(math.floor(i/2))
 					# return (i)
 		# return recursion(combinatoria(i))+recursion(combinatoria(i-1))
 
@@ -38,4 +49,5 @@ def combinatoria(n):
 	return factorial(n)/(factorial(n-2)*factorial(2))
 
 print("final")
-print(recursion(arr))
+print(recursion(arr)) 
+print(int(a))
