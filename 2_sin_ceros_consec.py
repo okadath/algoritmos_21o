@@ -5,6 +5,7 @@ n=a[0]
 k=a[1]
 
 array=[]
+array=0
 # n -> longitud cadena
 # k -> # de ceros
 def recursion(n,k,cadena,stri):
@@ -27,7 +28,8 @@ def recursion(n,k,cadena,stri):
 		# print("k="+str(k))
 		# print(cadena)
 		if k>=0:
-			array.append(cadena)
+			# array.append(cadena)
+			array=array+1
 
 
 	else:
@@ -54,4 +56,4 @@ def recursion(n,k,cadena,stri):
 recursion(int(n)-1,int(k),"","0")
 recursion(int(n)-1,int(k),"","1")
 # print(array)
-print(len(array))
+print((array))
