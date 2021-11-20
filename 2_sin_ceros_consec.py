@@ -18,11 +18,12 @@ def recursion(n,k,cadena,stri):
 		# cadena=cadena+"1"
 		# return 1-
 		if stri=="1":
-			cadena=cadena+"1"
+			pass
+			# cadena=cadena+"1"
 		else:
-			if cadena[-1:]=="0":
+			if cadena=="0":
 				k=0
-			cadena=cadena+"0"
+			# cadena=cadena+"0"
 			k=k-1
 		# print("n="+str(n))
 		# print("k="+str(k))
@@ -37,14 +38,14 @@ def recursion(n,k,cadena,stri):
 		# array.append(cadena)
 		# array.append(cadena)
 		if stri=="1":
-			cadena=cadena+"1"
+			cadena="1"
 		else:
-			a=cadena[-1:]
+			# a=cadena[-1:]
 			# print("a")
 			# print(a)
-			if cadena[-1:]=="0":
+			if cadena=="0":
 				k=0
-			cadena=cadena+"0"
+			cadena="0"
 			k=k-1
 
 		return recursion(n-1,k,cadena,"0"),recursion(n-1,k,cadena,"1")
@@ -53,7 +54,13 @@ def recursion(n,k,cadena,stri):
 
 			# recursion(n-1,k-1,cadena,"0")
 
+# print(k)
+# print(n)
+if k=="0" and n=="0" :
+	print(1)
+
 recursion(int(n)-1,int(k),"","0")
 recursion(int(n)-1,int(k),"","1")
 # print(array)
-print((array))
+
+print(array)
