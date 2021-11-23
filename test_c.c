@@ -21,10 +21,7 @@ int recursion(int n, int k,int cadena,int stri) {
       return 1;
    }
    if (n==0) {//://#and k==0:
-      if (stri==1){
-         int asd=0;
-      }
-      else{
+      if (stri==0){
          if (cadena==0){
             k=0;
          }
@@ -40,7 +37,7 @@ int recursion(int n, int k,int cadena,int stri) {
       }
       else{
          if (cadena==0){
-            k=0;
+            k=-1;
          }
          cadena=0;
          k=k-1;
