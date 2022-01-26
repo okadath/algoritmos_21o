@@ -1,2 +1,32 @@
-12 1
-AAAAAAADADADDDD
+3
+
+
+2
+5 7
+
+10 6
+ADADADADAD
+DADADADADA
+8 2
+DDDDDDDD
+ADDAAAAD
+6 2
+DADADA
+
+ADADADADAA
+
+
+
+ADADADADAD
+
+
+
+
+
+
+
+
+
+#si
+#si el contador no se vacia por que se acabo la cadena
+manda un error por la resta
